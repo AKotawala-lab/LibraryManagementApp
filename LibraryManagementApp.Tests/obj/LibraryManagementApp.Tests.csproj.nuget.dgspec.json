@@ -1,0 +1,325 @@
+{
+  "format": 1,
+  "restore": {
+    "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Tests\\LibraryManagementApp.Tests.csproj": {}
+  },
+  "projects": {
+    "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.API\\LibraryManagementApp.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.API\\LibraryManagementApp.API.csproj",
+        "projectName": "LibraryManagementApp.API",
+        "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.API\\LibraryManagementApp.API.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj": {
+                "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj"
+              },
+              "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Infrastructure\\LibraryManagementApp.Infrastructure.csproj": {
+                "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Infrastructure\\LibraryManagementApp.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj",
+        "projectName": "LibraryManagementApp.Core",
+        "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Infrastructure\\LibraryManagementApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Infrastructure\\LibraryManagementApp.Infrastructure.csproj",
+        "projectName": "LibraryManagementApp.Infrastructure",
+        "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Infrastructure\\LibraryManagementApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj": {
+                "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Tests\\LibraryManagementApp.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Tests\\LibraryManagementApp.Tests.csproj",
+        "projectName": "LibraryManagementApp.Tests",
+        "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Tests\\LibraryManagementApp.Tests.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.API\\LibraryManagementApp.API.csproj": {
+                "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.API\\LibraryManagementApp.API.csproj"
+              },
+              "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj": {
+                "projectPath": "d:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.Core\\LibraryManagementApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.10.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

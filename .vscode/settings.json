@@ -1,0 +1,14 @@
+{
+    "dotnet-test-explorer.autoExpandTree": true,
+    "dotnet-test-explorer.autoWatch": true,
+    "dotnet.defaultSolution": "D:\\Return Back To Job\\Demo\\LibraryManagementApp\\LibraryManagementApp.sln",
+    "dotnet-test-explorer.testProjectPath": "LibraryManagementApp.Tests/LibraryManagementApp.Tests.csproj",
+    "dotnet.server.useOmnisharp": true,
+    "csharp.preview.improvedLaunchExperience": true,
+    "dotnet.testWindow.useTestingPlatformProtocol": true,
+    "omnisharp.useModernNet": true,
+    "omnisharp.sdkPath": "latest",
+    "appService.defaultWebAppToDeploy": "",
+    //"appService.deploySubpath": "LibraryManagementApp.Web/dist/library-management-app.web/browser"
+    "appService.deploySubpath": "LibraryManagementApp.API/publish"
+}

@@ -1,0 +1,61 @@
+<!-- <div class="container mt-3">
+    <h2>Authors</h2>
+    <form [formGroup]="authorForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" formControlName="description"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Author</button>
+    </form>
+    <hr>
+    <ul class="list-group">
+      <li *ngFor="let author of authors" class="list-group-item">
+        {{ author.name }} - {{ author.description }}
+        <button (click)="deleteAuthor(author.id)" class="btn btn-danger btn-sm float-right">Delete</button>
+      </li>
+    </ul>
+  </div> -->
+
+  <div class="container">
+    <h2>Authors Dashboard</h2>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Authors List</h3>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let author of authors" [class.active]="selectedAuthor === author" (click)="onSelectAuthor(author)">
+            {{ author.name }}
+          </li>
+        </ul>
+        <hr>
+        <button class="btn btn-success" routerLink="/authors/add">Add Author</button>
+      </div>
+      <div class="col-md-8">
+        <h3>Author Details</h3>
+        <div *ngIf="selectedAuthor">
+          <div class="row">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Person_Image_Placeholder.png" alt="{{ selectedAuthor.name }}" class="img-responsive" style="max-width: 200px; max-height: 200px;">
+          </div>          
+          <p><strong>Name:</strong> {{ selectedAuthor.name }}</p>
+          <p><strong>Description:</strong> {{ selectedAuthor.description }}</p>
+          <p><strong>Books Written:</strong></p>
+          <ul class="list-group">
+            <li *ngFor="let book of booksWritten" class="list-group-item">
+              {{ book.title }}
+            </li>
+          </ul>          
+          <button class="btn btn-primary" (click)="goToEditAuthor(selectedAuthor)">Edit</button>
+          <button class="btn btn-danger" (click)="confirmDelete(selectedAuthor)">Delete</button>
+        </div>
+        <div *ngIf="!selectedAuthor">
+          <p>Please select an author from the list.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

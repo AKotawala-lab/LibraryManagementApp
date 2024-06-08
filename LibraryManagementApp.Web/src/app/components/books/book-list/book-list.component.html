@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Books</h2>
+      <button class="btn btn-primary mb-3" (click)="navigateToAddBook()">Add Book</button>
+      <ul class="list-group">
+        <li *ngFor="let book of books" class="list-group-item" (click)="selectBook(book)" [class.active]="selectedBook === book">
+          {{ book.title }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <h3>Book Details</h3>
+      <div *ngIf="selectedBook">
+        <p>{{ selectedBook.title }}</p>
+        <p>{{ selectedBook.description }}</p>
+        <button class="btn btn-warning" (click)="navigateToEditBook(selectedBook.bookId)">Edit</button>
+        <button class="btn btn-danger" (click)="confirmDelete(selectedBook.bookId)">Delete</button>
+      </div>
+      <div *ngIf="!selectedBook">
+        <p>Please select a book from the list.</p>
+      </div>      
+    </div>
+  </div>
+</div>
