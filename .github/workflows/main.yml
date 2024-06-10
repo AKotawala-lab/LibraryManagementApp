@@ -6,6 +6,10 @@ on:
     branches:
     - main
 
+env:
+  AZURE_WEBAPP_NAME: ad-librarymanagement-demo
+  AZURE_WEBAPP_PACKAGE_PATH: "./publish"
+  
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -25,5 +29,12 @@ jobs:
         run: dotnet build ./LibraryManagementApp.API/LibraryManagementApp.API.csproj --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./LibraryManagementApp.API/LibraryManagementApp.API.csproj --configuration Release --no-build
+        run: dotnet publish ./LibraryManagementApp.API/LibraryManagementApp.API.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+
+      - name: Deployment
+        uses: actions/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+          package: "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
   
